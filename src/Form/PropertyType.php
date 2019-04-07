@@ -34,6 +34,12 @@ class PropertyType extends AbstractType
                 'choice_label' => 'name',
                 'multiple' => true
             ])
+           /* ->add('options', EntityType::class, [
+                'class' => Option::class,
+                'required' => false,
+                'choice_label' => 'name',
+                'multiple' => true
+            ])*/
             ->add('imageFile', FileType::class, [
                 'required' => false
             ])
