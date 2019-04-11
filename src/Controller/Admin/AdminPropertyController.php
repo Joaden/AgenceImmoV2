@@ -49,6 +49,18 @@ class AdminPropertyController extends AbstractController
     }
 
     /**
+     * @Route("/adminaccount", name="admin.adminaccount")
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function adminaccount()
+    {
+        // findAll pour recuperer les données de l'admin
+        $properties = $this->repository->findAll();
+        // renvois vers la page adminaccount avec un tableau de données
+        return $this->render('admin/adminaccount.html.twig');
+    }
+
+    /**
      * @Route("/admin/property/create", name="admin.property.new")
      */
     public function new(Request $request)

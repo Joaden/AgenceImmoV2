@@ -34,18 +34,32 @@ class PropertyType extends AbstractType
                 'choice_label' => 'name',
                 'multiple' => true
             ])
-           /* ->add('options', EntityType::class, [
-                'class' => Option::class,
-                'required' => false,
-                'choice_label' => 'name',
-                'multiple' => true
-            ])*/
+            // ->add('city', EntityType::class, [
+            //     'class' => Address::class,
+            //     'required' => true,
+            //     'choice_label' => 'name'
+
+            // ])
+            // ->add('address', EntityType::class, [
+            //     'class' => Address::class,
+            //     'required' => true,
+            //     'choice_label' => 'name'
+
+            // ])
+            // ->add('postal_code', EntityType::class, [
+            //     'class' => Address::class,
+            //     'required' => true,
+            //     'choice_label' => 'name'
+            // ])
+
             ->add('imageFile', FileType::class, [
                 'required' => false
             ])
+            
             ->add('city')
             ->add('address')
             ->add('postal_code')
+            
             ->add('class_energy', ChoiceType::class, [
                 'choices' => $this->getChoicesClass()
             ])
@@ -61,6 +75,7 @@ class PropertyType extends AbstractType
             'data_class' => Property::class,
             'translation_domain' => 'forms'
         ]);
+    
     }
 
     // choix du chauffage

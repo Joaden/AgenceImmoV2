@@ -5,6 +5,10 @@ namespace App\Repository;
 use App\Entity\User;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Symfony\Bridge\Doctrine\RegistryInterface;
+use App\Entity\PropertySearch;
+use Doctrine\ORM\QueryBuilder;
+
+
 
 /**
  * @method User|null find($id, $lockMode = null, $lockVersion = null)
@@ -19,6 +23,26 @@ class UserRepository extends ServiceEntityRepository
         parent::__construct($registry, User::class);
     }
 
+        /**
+      * @return Query
+      */
+      public function findAllVisibleQuery(User $user)
+      {
+          $query = $this->findVisibleQuery();
+  
+          return $query->getQuery();
+              
+          //conditions
+          //->Where('p.sold = false')
+          //->setParameter('val', $value)
+          //->orderBy('p.id', 'ASC')
+          //->setMaxResults(10)
+          //recupere la requete
+          //->getQuery();
+          // recup le resultat
+          //->getResult();
+      }
+  
     // /**
     //  * @return User[] Returns an array of User objects
     //  */

@@ -25,9 +25,9 @@ class UserFixtures extends Fixture
         //Ne pas oublier d'importer le use Entity User
         // fixtures servent à remplir la base de donnees
         $user = new User();
-        $user->setUsername('test');
+        $user->setUsername('admin');
         // on utilise une méthode encoder de la class encodePassword avec des parametress
-        $user->setPassword($this->encoder->encodePassword($user, 'mdproot'));
+        $user->setPassword($this->encoder->encodePassword($user, 'admin'));
         $manager->persist($user);
         $manager->flush();
     }

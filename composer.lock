@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "78f1b878ce16549a07e9a299729a9308",
+    "content-hash": "8e830bbcd01c4d8252624756ea0015a5",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -5734,6 +5734,60 @@
             "time": "2019-01-16T20:35:37+00:00"
         },
         {
+            "name": "twig/cache-extension",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/twig-cache-extension.git",
+                "reference": "cdea66eccd13d9d20fb745df7d7d7ca7136bd9fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/twig-cache-extension/zipball/cdea66eccd13d9d20fb745df7d7d7ca7136bd9fa",
+                "reference": "cdea66eccd13d9d20fb745df7d7d7ca7136bd9fa",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "twig/twig": "^1.0|^2.0"
+            },
+            "require-dev": {
+                "doctrine/cache": "~1.0"
+            },
+            "suggest": {
+                "psr/cache-implementation": "To make use of PSR-6 cache implementation via PsrCacheAdapter."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander",
+                    "email": "iam.asm89@gmail.com"
+                }
+            ],
+            "description": "Cache fragments of templates directly within Twig.",
+            "homepage": "https://github.com/twigphp/twig-cache-extension",
+            "keywords": [
+                "cache",
+                "extension",
+                "twig"
+            ],
+            "time": "2017-01-17T07:43:34+00:00"
+        },
+        {
             "name": "twig/twig",
             "version": "v2.6.2",
             "source": {
@@ -6603,16 +6657,16 @@
         },
         {
             "name": "symfony/maker-bundle",
-            "version": "v1.11.3",
+            "version": "v1.11.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/maker-bundle.git",
-                "reference": "08fabae78050d2fe71341d0edc3872bddf03482f"
+                "reference": "186ffc80b8f363e04ea3c2ebf49e1263a84b4e39"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/maker-bundle/zipball/08fabae78050d2fe71341d0edc3872bddf03482f",
-                "reference": "08fabae78050d2fe71341d0edc3872bddf03482f",
+                "url": "https://api.github.com/repos/symfony/maker-bundle/zipball/186ffc80b8f363e04ea3c2ebf49e1263a84b4e39",
+                "reference": "186ffc80b8f363e04ea3c2ebf49e1263a84b4e39",
                 "shasum": ""
             },
             "require": {
@@ -6665,7 +6719,7 @@
                 "scaffold",
                 "scaffolding"
             ],
-            "time": "2019-01-17T02:02:27+00:00"
+            "time": "2019-03-11T15:55:09+00:00"
         },
         {
             "name": "symfony/panther",
@@ -7118,7 +7172,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "twig/cache-extension": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

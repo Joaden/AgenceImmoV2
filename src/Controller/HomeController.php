@@ -47,4 +47,56 @@ class HomeController extends AbstractController
       //return new Response('coucou');
     }
 
+    /**
+     * @Route("/about", name="about")
+     * @return Response
+     */
+    public function about(): Response
+    {
+        
+        return $this->render('pages/about.html.twig');
+      //return new Response('about');
+    }
+
+    /**
+     * @Route("/infos", name="infos")
+     * @return Response
+     */
+    public function infos(): Response
+    {
+        return $this->render('pages/infos.html.twig');
+      //return new Response('infos');
+    }
+
+     /**
+     * @Route("/contact", name="contact")
+     * @return Response
+     */
+    public function contact(): Response
+    {
+        return $this->render('pages/contact.html.twig');
+      //return new Response('contact');
+    }
+    
+    /**
+     * @Route("/louer", name="louer")
+     * @return Response
+     */
+    public function louer(): Response
+    {
+        return $this->render('pages/louer.html.twig');
+      //return new Response('louer');
+    }
+
+    /**
+     * @Route("/register", name="register")
+     * @return Response
+     */
+    public function register(): Response
+    {
+        return $this->render('pages/register.html.twig');
+      //return new Response('register');
+    }
+   
+
 }

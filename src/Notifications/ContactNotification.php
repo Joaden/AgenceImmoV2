@@ -24,7 +24,7 @@ class ContactNotification {
 
     public function notify(Contact $contact)
     {
-        // instance de swiftmessage + nom du bien
+        // instance de swiftmessage + nom du bien = $contact, get property qui renvoi-> le titre
         $message = (new \Swift_Message('Agence : ' . $contact->getProperty()->getTitle()))
         ->setFrom('noreply@agence.fr')
         ->setTo('contact@agence.fr')

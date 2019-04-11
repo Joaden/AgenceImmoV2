@@ -118,5 +118,6 @@ class User implements UserInterface,\Serializable
             $this->username,
             $this->password
             ) = unserialize($serialized, ['allowed_classes' => false]);
+            // en fonction de ce que l'on désérialise
     }
 }
