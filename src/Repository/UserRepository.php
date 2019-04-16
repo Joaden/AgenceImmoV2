@@ -23,7 +23,7 @@ class UserRepository extends ServiceEntityRepository
         parent::__construct($registry, User::class);
     }
 
-        /**
+    /**
       * @return Query
       */
       public function findAllVisibleQuery(User $user)

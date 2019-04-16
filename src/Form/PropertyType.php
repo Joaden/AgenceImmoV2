@@ -39,18 +39,6 @@ class PropertyType extends AbstractType
             //     'required' => true,
             //     'choice_label' => 'name'
 
-            // ])
-            // ->add('address', EntityType::class, [
-            //     'class' => Address::class,
-            //     'required' => true,
-            //     'choice_label' => 'name'
-
-            // ])
-            // ->add('postal_code', EntityType::class, [
-            //     'class' => Address::class,
-            //     'required' => true,
-            //     'choice_label' => 'name'
-            // ])
 
             ->add('imageFile', FileType::class, [
                 'required' => false
